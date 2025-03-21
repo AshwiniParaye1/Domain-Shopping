@@ -10,7 +10,6 @@ import {
   Center,
   Flex,
   HStack,
-  IconButton,
   Input,
   Progress,
   SimpleGrid,
@@ -18,6 +17,7 @@ import {
   VStack
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { MdDelete } from "react-icons/md";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -322,15 +322,9 @@ function Challenge() {
                         : "Unavailable"}
                     </Badge>
                   </HStack>
-                  <IconButton
-                    size="sm"
-                    colorScheme="red"
-                    aria-label="Remove domain"
-                    _icon={{
-                      color: "red.500"
-                    }}
-                    onClick={() => removeDomain(domain)}
-                  />
+                  <Button onClick={() => removeDomain(domain)}>
+                    <MdDelete />
+                  </Button>
                 </Flex>
               ))}
             </VStack>
