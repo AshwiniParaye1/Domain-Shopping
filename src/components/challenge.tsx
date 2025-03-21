@@ -1,3 +1,5 @@
+//src/challenge.tsx
+
 "use client";
 
 import { isDomainAvailable } from "@/lib/resource";
@@ -16,7 +18,7 @@ import {
   VStack
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Challenge() {
@@ -374,9 +376,6 @@ function Challenge() {
             Keep Best {numDomainsRequired} Domains
           </Button>
         </SimpleGrid>
-
-        {/* Add ToastContainer for react-toastify */}
-        <ToastContainer position="bottom-right" />
       </VStack>
     </Center>
   );

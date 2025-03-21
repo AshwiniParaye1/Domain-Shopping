@@ -1,3 +1,5 @@
+//src/app/page.tsx
+
 import Challenge from "@/components/challenge";
 import { Center, Theme } from "@chakra-ui/react";
 import { ToastContainer } from "react-toastify";
